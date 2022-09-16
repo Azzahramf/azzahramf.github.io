@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1> The Top 5 of My Best Friend </h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <style>
+        *{
+            background-color: Ivory;
+        }
+        h1 {
+            color: DarkSalmon;
+            cursor: pointer;
+            transition: 0.2s;
+            text-align : center;
+        }
+            h1:hover{
+            color: Tomato;
+            letter-spacing: 2px;
+        }
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            position: center;
+        }
+        th{
+            background-color: peru;
+            color: white;
+            font-weight: bold;
+        }
+        
+        th:hover{
+            background-color:Bisque;
+        }
+    
+        th, td{
+            text-align: center;
+            padding: 10px;
+        }
+    
+        td:hover{
+            background-color:Bisque;
+        }
+        button{
+        font-weight: bold;
+        background-color: peru;
+        color: white;
+        padding: 12px 16px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: 1.0s;
+        }
+        button:hover{
+        transform: scale(1.1);
+        }
+        .tombol{
+        text-align: center;
+        }
+        .ubah{
+            background-color: Linen;
+        }
+        .hapus{
+            background-color: Linen;
+        }
+        </style>
+    <table align="center">
+        <tr>
+            <th>No.</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Action</th>
+        </tr>
+        <tr id="row__1">
+            <td>1.</td>
+            <td class="nama_bestie">Dini Andriyani</td>
+            <td class="alamat_bestie">Kota Cirebon</td>
+            <td class="hapus" id="hapus__1">Delete</td>
+        </tr>
+        <tr id="row__2">
+            <td>2.</td>
+            <td class="nama_bestie">Euis Fadilah</td>
+            <td class="alamat_bestie">Kota Cirebon</td>
+            <td class="hapus" id="hapus__2">Delete</td>
+        </tr>
+        <tr id="row__3">
+            <td>3.</td>
+            <td class="nama_bestie">Anjar Ayuning Lestari</td>
+            <td class="alamat_bestie">Kota Cirebon</td>
+            <td class="hapus" id="hapus__3">Delete</td>
+        </tr>
+        <tr id="row__4">
+            <td>4.</td>
+            <td class="nama_bestie">Apriliana Janatu Marwa</td>
+            <td class="alamat_bestie">Kab Majalengka</td>
+            <td class="hapus" id="hapus__4">Delete</td>
+        </tr>
+        <tr id="row__5">
+            <td>5.</td>
+            <td class="nama_bestie">Athhar Hafizha Luthfi</td>
+            <td class="alamat_bestie">Kota Cirebon</td>
+            <td class="hapus" id="hapus__5">Delete</td>
+        </tr>
+        </table>
+        <table align="center"></table>
+    <div class="tombol">
+        <a href="https://azzahramf.github.io">
+            <button>Back to Home</button>
+        </a>
+    </div>
+</table>
+<script>
+    $(document).ready(function(){
+        //alert(0)
+        $('.nama_bestie').click(function(){
+            //alert(1)
+            let isi = $(this).text();
+            //alert(isi);
+            let isi2 = prompt('Ubah dengan:', isi);
+            if(!isi2) return;
+            //alert(isi2);
+            $(this).text(isi2);
+        })
+        $('.alamat_bestie').click(function(){
+            let isi = $(this).text();
+            let isi2 = prompt('Ubah dengan:', isi);
+            if(!isi2) return;
+            $(this).text(isi2);
+        })
+        $('.hapus').click(function(){
+            //alert(1)
+            let yakin = confirm('Yakin mau menghapus nama ini?')
+            if(!yakin) return;
+            let id = $(this).prop('id')
+            //alert(id);
+            let rid = id.split('__');
+            let baris_ke = rid[1];
+            //alert(baris_ke);
+            $('#row__'+baris_ke).slideUp()
+            //alert('yakin nih')
+
+        })
+    })
+</script>
+</body>
+</html>
