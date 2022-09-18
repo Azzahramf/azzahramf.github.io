@@ -22,7 +22,7 @@ table th {
 legend{
     color : steelblue;
 }
-button{
+button {
     font-weight: bold;
     background-color: SkyBlue;
     color: white;
@@ -31,3 +31,15 @@ button{
     border-radius: 10px;
     margin-top: 20px;
     }
+td textarea {
+    padding: 6px 30px;
+    border-radius: 5px;
+}
+td select {
+    padding: 6px 30px;
+    border-radius: 5px;
+}
+td input {
+    padding: 6px 30px;
+    border-radius: 5px;
+}
