@@ -1,0 +1,33 @@
+body{
+	font-family: "arial";
+}
+h3{
+    color : crimson;
+}
+p{
+    color : red;
+}
+thead{
+    color : navy;
+}
+table{
+    border-collapse:collapse;
+    margin: 1em;
+
+}
+table th {
+    font-weight:bold;
+    font-size:14px;
+}
+legend{
+    color : steelblue;
+}
+button{
+    font-weight: bold;
+    background-color: SkyBlue;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    }
