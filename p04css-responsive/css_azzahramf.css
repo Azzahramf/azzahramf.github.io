@@ -1,0 +1,58 @@
+body{
+	font-family: "arial";
+    box-sizing: border-box;
+    margin: 5%;
+}
+h3{
+    color : crimson;
+}
+p{
+    color : red;
+}
+thead{
+    color : navy;
+}
+table{
+    border-collapse:collapse;
+    margin: 1em;
+    width: 90%;
+
+}
+[class="titik"]{
+    word-spacing: 20%;
+}
+table th {
+    font-weight:bold;
+    font-size:14px;
+}
+fieldset{
+    border-radius: 15px;
+}
+legend{
+    color : steelblue;
+}
+td textarea {
+    padding: 6px 30px;
+    border-radius: 5px;
+}
+button {
+    font-weight: bold;
+    background-color: SkyBlue;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    }
+button:hover{
+    background-color: blue;
+    }
+td select {
+    padding: 6px 30px;
+    border-radius: 5px;
+}
+td input {
+    padding: 6px 30px;
+    border-radius: 5px;
+}
