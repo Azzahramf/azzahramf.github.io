@@ -1,8 +1,8 @@
 body{
 	font-family: "arial";
     box-sizing: border-box;
-    margin: 5%;
-    font-size: 8px ;
+    margin: 3%;
+    font-size: relative ;
 }
 h3{
     color : crimson;
@@ -23,22 +23,22 @@ table th {
     font-weight:bold;
 }
 fieldset{
-    border-radius: 15px;
+    border-radius: 10px;
 }
 legend{
     color : steelblue;
 }
 th{
-    width: 3%;
+    width: 2.5%;
 }
 .titik {
-    width: 2%;
+    width: 1.5%;
 }
 .data{
     width: 15%;
 }
 td textarea {
-    padding: 6px 30px;
+    padding: 5px 25px;
     border-radius: 5px;
 }
 button {
@@ -55,10 +55,10 @@ button:hover{
     background-color: blue;
     }
 td select {
-    padding: 6px 30px;
+    padding: 5px 25px;
     border-radius: 5px;
 }
 td input {
-    padding: 6px 30px;
+    padding: 5px 25px;
     border-radius: 5px;
 }
