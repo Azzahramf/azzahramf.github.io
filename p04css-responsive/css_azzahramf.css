@@ -2,7 +2,7 @@ body{
 	font-family: "arial";
     box-sizing: border-box;
     margin: 5%;
-    font-size: relative ;
+    font-size: absolute ;
 }
 h3{
     color : crimson;
@@ -16,7 +16,7 @@ thead{
 table{
     border-collapse:collapse;
     margin: auto;
-    width: 90%;
+    width: relative;
 
 }
 table th {
@@ -27,6 +27,15 @@ fieldset{
 }
 legend{
     color : steelblue;
+}
+th{
+    width: 3%;
+}
+.titik {
+    width: 2%;
+}
+.data{
+    width: 15%;
 }
 td textarea {
     padding: 6px 30px;
