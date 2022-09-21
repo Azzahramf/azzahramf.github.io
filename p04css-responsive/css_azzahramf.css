@@ -1,8 +1,10 @@
+*{
+    font-size: 2vw ;
+}
 body{
 	font-family: "arial";
     box-sizing: border-box;
     margin: 3%;
-    font-size: 2vw ;
 }
 h3{
     color : crimson;
@@ -33,13 +35,29 @@ th{
 }
 .titik {
     width: 1.5%;
+    font-size: 1.5vw;
 }
 .data{
     width: 15%;
+    font-size: 1.75vw;
+}
+.jk{
+    width: 7%;
+}
+.prodi{
+    width: 7%;
+}
+.payment{
+    width: 7%;
+}
+.warga{
+    width: 7%;
 }
 td textarea {
     padding: 5px 25px;
     border-radius: 5px;
+    font-size: 1.5vw;
+    width: 90%
 }
 button {
     font-weight: bold;
@@ -50,6 +68,7 @@ button {
     border-radius: 10px;
     margin-top: 20px;
     cursor: pointer;
+    font-size: 1.5vw;
     }
 button:hover{
     background-color: blue;
@@ -57,8 +76,12 @@ button:hover{
 td select {
     padding: 5px 25px;
     border-radius: 5px;
+    font-size: 1.5vw;
+    width: 95%
 }
 td input {
     padding: 5px 25px;
     border-radius: 5px;
+    font-size: 1.5vw;
+    width: 90%
 }
