@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Formulir PMB Responsive</title>
+    <link rel="stylesheet" type="text/css" href="azzahramf_style.css" />
+    </head>
+<body>
+    <img src="header.jpg" width="100%"/>
+      <h1 align="center">Formulir Pendaftaran Mahasiswa Baru</h1>
+      <h3>Petunjuk Pengisian:</h3>
+      <p>1. Isilah data dengan cermat, teliti dan benar</p>
+      <p>2. Isilah dengan huruf balok</p>
+      <p>3. Salah penulisan pada pengisian formulir ini akan berakibat kesalahan pada penulisan data Saudara/i pada ijazah</p>
+    <div class="pendaftaran">
+        <form method="post" action="#">
+          <div class="baris">
+            <div class="data">
+              <label for="NP">Nomor Pendaftaran</label>
+            </div>
+            <div class="kolom">
+              <input type="text" id="NP" name="nomor_pendaftaran" placeholder="Nomor pendaftaran kamu..">
+            </div>
+          </div>
+          <div class="baris">
+            <div class="data">
+              <label for="nama">Nama Lengkap</label>
+            </div>
+            <div class="kolom">
+              <input type="text" id="name" name="nama_lengkap" placeholder="Nama lengkap kamu..">
+            </div>
+          </div>
+          <div class="baris">
+            <div class="data">
+              <label for="TG">Tanggal Ujian</label>
+            </div>
+            <div class="kolom">
+                <input type="date" id="tanggal" name="tanggal_ujian"/>
+            </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="JK">Jenis Kelamin</label>
+                </div>
+                <div class="kolom">
+                    <input type="radio" name="jenis_kelamin" class="jk"/>Laki-laki <br/>
+                    <input type="radio" name="jenis_kelamin" class="jk"/>Perempuan
+                </div>
+            </div>
+                <div class="baris">
+                    <div class="data">
+                        <label for="prodi">Jenjang/Prodi yang dipilih</label>
+                    </div>
+                    <div class="kolom">
+                        <table border="1" cellpadding="7">
+                            <thead>
+                              <tr>
+                                <th rowspan="2">JENJANG</th>
+                                <th colspan="2">PROGRAM STUDI</th>
+                              </tr>
+                              <tr>
+                                <th>Reguler</th>
+                                <th>Karyawan</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>
+                                  D-III <br/>
+                                  (Diploma Tiga)
+                                </th>
+                                <td>
+                                  <input type="radio" name="prodi" class="prodi"/>Manajemen Informasi<br/>
+                                  <input type="radio" name="prodi" class="prodi"/>Komputerisasi Akutansi
+                                </td>
+                                <td>
+                                  <input type="radio" name="prodi" class="prodi"/>Manajemen Informas<br/>
+                                  <input type="radio" name="prodi" class="prodi"/>Komputerisasi Akutansi
+                                </td>
+                              </tr>
+                              <tr>
+                                <th>
+                                  S-1 <br/>
+                                  (Strata Satu)
+                                </th>
+                                <td>
+                                  <input type="radio" name="prodi" class="prodi"/>Teknik Informatika<br/>
+                                  <input type="radio" name="prodi" class="prodi"/>Sistem Informasi<br/>
+                                  <input type="radio" name="prodi" class="prodi"/>Rekayasa Perangkat Lunak
+                                </td>
+                                <td>
+                                  <input type="radio" name="prodi" class="prodi"/>Teknik Informatika<br/>
+                                  <input type="radio" name="prodi" class="prodi"/>Sistem Informasi<br/>
+                                  <input type="radio" name="prodi" class="prodi"/>Rekayasa Perangkat Lunak
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+          <div class="baris">
+            <div class="data">
+              <label for="WK">Waktu Kuliah</label>
+            </div>
+            <div class="kolom">
+              <select id="WK" name="waktu_kuliah">
+                <option></option>
+                <option value="pagi">Pagi</option>
+                <option value="sore">Sore</option>
+                <option value="malam">Malam</option>
+              </select>
+            </div>
+          </div>
+          <div class="baris">
+            <div class="data">
+              <label for="SZ">Size Jas</label>
+            </div>
+            <div class="kolom">
+              <select id="SZ" name="size_jas">
+                <option></option>
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                  <option value="xl">XL</option>
+                  <option value="xxl">XXL</option>
+              </select>
+            </div>
+          </div>
+          <div class="baris">
+            <div class="data">
+              <label for="SP">Sistem Pembayaran</label>
+            </div>
+            <div class="kolom">
+                <input type="radio" name="sistem_pembayaran" class="sp"/>Angsuran <br/>
+                <input type="radio" name="sistem_pembayaran" class="sp"/>Tunai
+            </div>
+        </div>
+    <br/>
+        <h2>DATA PRIBADI</h2>
+        <div class="baris">
+            <div class="data">
+              <label for="agama">Agama</label>
+            </div>
+            <div class="kolom">
+              <input type="text" id="agama" name="agama" placeholder="Agama kamu..">
+            </div>
+          </div>
+        <div class="baris">
+            <div class="data">
+              <label for="TL">Tempat Lahir</label>
+            </div>
+            <div class="kolom">
+              <input type="text" id="TL" name="tempat_lahir" placeholder="Tempat lahir kamu..">
+            </div>
+        </div>
+        <div class="baris">
+            <div class="data">
+              <label for="LT">Tanggal Lahir</label>
+            </div>
+            <div class="kolom">
+                <input type="date" id="LT" name="tanggal_lahir"/>
+            </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="alamat">Alamat dan No. Rumah</label>
+                </div>
+                <div class="kolom">
+                  <textarea id="alamat" name="alamat" placeholder="Tulis alamat tempat kamu tinggal.." style="height:100px"></textarea>
+                </div>
+              </div>
+              <div class="baris">
+                <div class="data">
+                  <label for="rtrw">RT / RW</label>
+                </div>
+                <div class="kolom">
+                  <input type="text" id="rtrw" name="rt_rw" placeholder="RT / RW rumah kamu tinggal..">
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="kota">Kota</label>
+                </div>
+                <div class="kolom">
+                  <input type="text" id="kota" name="kota" placeholder="Kota kamu tinggal..">
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="kp">Kode Pos</label>
+                </div>
+                <div class="kolom">
+                  <input type="text" id="kp" name="kod_pos" placeholder="Kode pos rumah kamu..">
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="nomor">Nomor Telepon Rumah / HP</label>
+                </div>
+                <div class="kolom">
+                  <input type="text" id="nomor" name="nomor_telepon" placeholder="Tulis nomor telepon yang dapat dihubungi..">
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="warga">Kewarganegaraan</label>
+                </div>
+                <div class="kolom">
+                    <input type="radio" name="kewarganegaraan" class="warga"/>WNI <br/>
+                    <input type="radio" name="kewarganegaraan" class="warga"/>WNA
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="goldar">Gologan Darah</label>
+                </div>
+                <div class="kolom">
+                  <input type="text" id="goldar" name="golongan_darah" placeholder="Golongan darah kamu..">
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="namaortu">Nama Orang Tua / Wali</label>
+                </div>
+                <div class="kolom">
+                  <input type="text" id="namaortu" name="nama_orangtua" placeholder="Nama lengkap orang tua / wali..">
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="pekerjaan">Pekerjaan</label>
+                </div>
+                <div class="kolom">
+                    <select id="pekerjaan" name="pekerjaan">
+                        <option></option>
+                          <option value="pns/pplri/tni">PNS / POLRI / TNI</option>
+                          <option value="swasta">Swasta</option>
+                          <option value="wiraswasta">Wiraswasta</option>
+                          <option value="lainnya">Lain - lain</option>
+                      </select>
+                </div>
+            </div>
+            <br/>
+            <h2>PENDIDIKAN TERAKHIR</h2>
+            <div class="baris">
+                <div class="data">
+                  <label for="asal">Asal SMA/SMK/Perguruan Tinggi</label>
+                </div>
+                <div class="kolom">
+                  <input type="text" id="asal" name="asal_sekolah" placeholder="Asal SMA / SMK / Perguruan Tinggi kamu..">
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="status">Status Sekolah/Perguruan Tinggi</label>
+                </div>
+                <div class="kolom">
+                    <select id="status" name="status_sekolah">
+                        <option></option>
+                          <option value="negeri">Negeri</option>
+                          <option value="swasta">Swasta</option>
+                          <option value="luar_negeri">Luar Negeri</option>
+                      </select>
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="jurusan">Jurusan</label>
+                </div>
+                <div class="kolom">
+                  <input type="text" id="jurusan" name="jurusan" placeholder="Jurusan terakhir pendidikan kamu..">
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="noijazah">Nomor Ijazah SMA/SMK/Diploma III/S1</label>
+                </div>
+                <div class="kolom">
+                  <input type="text" id="noijazah" name="no_ijazah" placeholder="Nomor ijazah pendidikan terakhir kamu..">
+                </div>
+            </div>
+            <div class="baris">
+                <div class="data">
+                  <label for="lulus">Tanggal Lulus</label>
+                </div>
+                <div class="kolom">
+                    <input type="date" id="lulus" name="tanggal_lulus"/>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div style="text-align: center;">
+          <button name="reset" type="reset">Reset</button>
+          <button name="kirim" type="kirim">Kirim</button>
+        </div>
+    </form>
+</body>
+</html>
