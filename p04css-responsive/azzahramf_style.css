@@ -27,6 +27,7 @@ input[type=date]{
 input[type=radio]{
     width: 5%;
     resize: vertical;
+    padding: 12px;
   }
 table{
     background-color: white;
