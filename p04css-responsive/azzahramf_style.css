@@ -37,6 +37,7 @@ table{
     border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
+    overflow: auto;
     resize: vertical;
 }
 label {
